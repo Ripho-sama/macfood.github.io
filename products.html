@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png" />
+
+
+  <title>Macfoods - Catalogue des produits</title>
+  <!-- <script src="script/script.js"></script> -->
+</head>
+
+<body class="m-0 p-0 relative overflow-x-hidden text-white bg-slate-950 " id="indicators-carousel"
+  data-carousel="static">
+  <section
+    class="bg-[url(../images/banner.png)] bg-no-repeat bg-cover bg-fixed lg:bg-[url(../images/banner-lg.png)] xl:bg-[url(../images/banner-xl.png)] min-h-screen w-full m-0 p-0 relative mask-[linear-gradient(180deg,white_70%,transparent_100%)]">
+    <header class="relative w-full h-16 p-5 bg-slate-900/10 z-20">
+      <a href="index.html" class=" mt-5 md:m-5 cursor-pointer hover:text-white active:text-white transition-all duration-500 font-[pacifico] text-red-700 text-3xl md:text-4xl lg:text-5xl  tracking-tight">MacFoods</a>
+    </header>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-20 text-center">
+
+      <!-- Badge -->
+      <span class="inline-block  font-bold text-xl xl:text-5xl lg:text-3xl  font-[montserrat] text-red-700">
+        <img src="images/logo.png" alt="Mac Foods Sarl logo - boissons naturelle au Cameroun" class="w-50 h-40" /> <!-- MacFoods -->
+      </span>
+
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-[Inter]">
+        Catalogue des <span class="text-red-700 font-[pacifico]">boissons MacFoods</span><!-- Vins & Jus Naturels -->
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="mt-6 max-w-3xl text-center mx-auto text-gray-300 text-lg font-[montserrat]">
+       savoir-faire local et de la qualité agroalimentaire.
+      </p>
+
+      <!-- CTA -->
+      <div class="mt-10 flex justify-center gap-6">
+        <a href="index.html#contact" class="px-7 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition">
+          Nous contacter
+        </a>
+
+      </div>
+
+    </div>
+    <div class="absolute inset-0 bg-slate-950/80 "></div>
+      <!--     <div class="relative z-10">
+              <div class="flex justify-between h-auto py-25 w-full  content-center">
+              <div class="px-5 content-center">
+                      <span class="text-white text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl shrink font-extrabold font-[shrikhand]">Savourez des moments exceptionnels avec <span class="text-red-800  font-[shrikhand]">MacFoods </span></span><br />
+                      <a href="" class="inline-block bg-none mt-5 border-0 w-auto bg-red-800 rounded-sm p-3 text-white font-[roboto] hover:bg-transparent hover:border hover:border-white hover:font-bold">Nous contacter</a>
+              </div>
+                  <img src="images/banner-image.png" class="hidden shrink-0 sama-lg:block h-70 w-70 md:size-1/2 max-w-96 maxh-96" alt="" />            
+              </div>
+          </div>
+      </div> -->
+  </section>
+  <section class="bg-slate-950 text-white py-12">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">Nos Jus</h2>
+
+        <div class="hidden sm:flex gap-3">
+          <button id="prev" class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
+            ←
+          </button>
+          <button id="next" class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
+            →
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div id="carousel" class="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory">
+
+        <!-- Card -->
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-1-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-fit" />
+          <h3 class="font-medium">Nectar de baobab</h3>
+          <p class="text-sm text-gray-400">Au lait<!-- Naturel & artisanal --></p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-2-512.jpeg" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-fit" />
+          <h3 class="font-medium">Pur Jus 'Oseille</h3>
+          <p class="text-sm text-gray-400">100% Naturels<!-- Naturel & artisanal --></p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-3-512.jpeg" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-fit" />
+          <h3 class="font-medium">Pur Jus Ananas-Papaye</h3>
+          <p class="text-sm text-gray-400">Saveur unique<!-- Naturel & artisanal --></p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-5-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Jus Tropical</h3>
+          <p class="text-sm text-gray-400">100% Ananas</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-6-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Jus de Citron</h3>
+          <p class="text-sm text-gray-400">100% fruits</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-7-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Jus de Mangue</h3>
+          <p class="text-sm text-gray-400">100% fruits</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/juice-9-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Jus Tropical</h3>
+          <p class="text-sm text-gray-400">100% fruits</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="bg-slate-950 text-white py-12">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Header -->
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold">Nos Vins</h2>
+
+        <div class="hidden sm:flex gap-3">
+          <button id="prev" class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
+            ←
+          </button>
+          <button id="next" class="p-2 rounded-full bg-white/10 hover:bg-white/20 transition">
+            →
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div id="carousel" class="flex gap-4 overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory">
+
+        <!-- Card -->
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/wine-3-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Vin Rouge</h3>
+          <p class="text-sm text-gray-400">Saveur raffinée</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/wine-4-512.png" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Vin Blanc</h3>
+          <p class="text-sm text-gray-400">A base d'Ananas</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/wine-6-512.jpeg" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Vin Rouge</h3>
+          <p class="text-sm text-gray-400">Naturel & Artisanal</p>
+        </div>
+
+        <div
+          class="min-w-[70%] sm:min-w-[45%] md:min-w-[30%] lg:min-w-[22%] bg-slate-900/50 rounded-2xl p-4 snap-start border border-white/10">
+          <img src="./images/products-treated/wine-7-512.jpeg" alt="produit Mac Foods Sarl" class="rounded-xl mb-4 h-96 w-full object-cover" />
+          <h3 class="font-medium">Vin Moelleux</h3>
+          <p class="text-sm text-gray-400">100% fruits</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="bg-gray-950 text-white py-24">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Content -->
+      <div>
+
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight font-[Inter]">
+          Une création à votre image
+        </h2>
+
+        <p class="mt-6 text-gray-400 text-lg leading-relaxed font-[montserrat]">
+          Nous concevons des vins personnalisés qui s’adaptent à chaque moment de vie.
+          Chaque bouteille est pensée pour refléter votre événement, avec une attention
+          particulière portée aux détails, à l’élégance et à l’émotion qu’elle transmet.
+        </p>
+
+        <p class="mt-4 text-gray-500 font-[montserrat]">
+          Anniversaires, célébrations, remises de diplômes ou moments de recueillement —
+          nos créations s’ajustent à chaque contexte avec justesse et raffinement.
+        </p>
+
+        <div class="mt-10 flex gap-4">
+          <a href="index.html#contact" class="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition">
+            Nous contacter
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Visual -->
+      <div class="relative">
+
+        <!-- Glow effect -->
+        <div class="absolute inset-0 flex justify-center items-center">
+          <div class="w-75 h-75 bg-[#9c0207]/20 blur-[120px] rounded-full"></div>
+        </div>
+
+        <!-- Image -->
+        <img src="./images/wine-treated.jpeg" alt="Vin personnalisé"
+          class="relative z-10 rounded-2xl shadow-2xl object-scale-contain w-full h-128" />
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/caroussel.js"></script>
+
+</body>
+
+</html>
